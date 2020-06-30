@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			a{
+				text-decoration:none;
+			}
+			
+			#img5{
+				margin-left:275px;
+			}
+		</style>
+		
+		<script>
+			onload=function(){
+				
+				//定时操作
+				var i = 8;
+				
+				setInterval(function(){
+					i++;
+					document.getElementById('lunbo').src="img/img"+i+".jpg";
+				
+				    if(i==9){
+				    	i=7;
+				    }
+				
+				},1500);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 最外层的table来做整个页面的布局-->
+		<table width="100%">
+			<!-- 第一行  放logo信息      嵌套一个三列的表格-->
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td>
+								<img src="img/logo.jpg"  />
+							</td>
+							<td>
+								<img id="img5" src="img/img5.jpg"  />
+								<img src="img/img6.jpg"  />
+								<img src="img/img7.jpg"  />
+								<img src="img/img4.jpg"  />
+							</td>
+							<td align="center">
+								<a href="">登录</a>&nbsp;&nbsp;&nbsp;     
+								<a href="">注册</a>&nbsp;&nbsp;&nbsp;
+								<a href="">购物车</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!--第二行：存放菜单信息  背景黑色 超链接颜色为白色-->
+			<tr bgcolor="#808080" height="50px">
+				<td>
+					<a href=""><font color="white">首页</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">精品手机</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">数码时尚</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">办公设备</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">主板显卡</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">智能设备</font></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><font color="white">MacBook</font></a>&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+			
+			<!--第三行    轮播图片 -->
+			<tr>
+				<td>
+				   <p>	
+					  <img src="img/img8.jpg" width="100%" height="350px" id="lunbo" />
+				   </p>
+				</td>
+			</tr>
+			
+			<!-- 第四行 存放热门商品信息  包含一个4行5列的表格  这里会用到表格的合并-->
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td colspan="5">
+								<font size="5">热门商品</font>
+								<img src="img/title2.jpg"  />
+							</td>
+						</tr>
+						
+						<tr align="center">
+							<td>
+								<img src="img/hm00001min.jpg" /><br/>
+								<font color="red">￥：1499</font><br/>
+								<span>荣耀9X</span>
+							</td>
+							<td>
+								<img src="img/hm00002min.jpg" /><br/>
+								<font color="red">￥：3210</font><br/>
+								<span>荣耀20&nbsp;李现同款</span>
+								
+							</td>
+							<td>
+								<img src="img/hm00003min.jpg" /><br/>
+								<font color="red">￥：999</font><br/>
+								<span>荣耀20i &nbsp;3200万</span>
+							</td>
+							<td>
+								<img src="img/hm00004min.jpg" /><br/>
+								<font color="red">￥：1999</font><br/>
+								<span>Redmi8A&nbsp;5000m</span>
+							</td>
+							<td>
+								<img src="img/hm00005min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+						</tr>
+						
+						<tr align="center">
+							<td>
+								<img src="img/hm00001min.jpg" /><br/>
+								<font color="red">￥：1499</font><br/>
+								<span>荣耀9X</span>
+							</td>
+							<td>
+								<img src="img/hm00002min.jpg" /><br/>
+								<font color="red">￥：3210</font><br/>
+								<span>荣耀20&nbsp;李现同款</span>
+								
+							</td>
+							<td>
+								<img src="img/hm00003min.jpg" /><br/>
+								<font color="red">￥：999</font><br/>
+								<span>荣耀20i &nbsp;3200万</span>
+							</td>
+							<td>
+								<img src="img/hm00004min.jpg" /><br/>
+								<font color="red">￥：1999</font><br/>
+								<span>Redmi8A&nbsp;5000m</span>
+							</td>
+							<td>
+								<img src="img/hm00005min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+						</tr>
+						
+						<tr align="center">
+							<td>
+								<img src="img/hm00001min.jpg" /><br/>
+								<font color="red">￥：1499</font><br/>
+								<span>荣耀9X</span>
+							</td>
+							<td>
+								<img src="img/hm00002min.jpg" /><br/>
+								<font color="red">￥：3210</font><br/>
+								<span>荣耀20&nbsp;李现同款</span>
+								
+							</td>
+							<td>
+								<img src="img/hm00003min.jpg" /><br/>
+								<font color="red">￥：999</font><br/>
+								<span>荣耀20i &nbsp;3200万</span>
+							</td>
+							<td>
+								<img src="img/hm00004min.jpg" /><br/>
+								<font color="red">￥：1999</font><br/>
+								<span>Redmi8A&nbsp;5000m</span>
+							</td>
+							<td>
+								<img src="img/hm00005min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!-- 第五行   广告图片-->
+			<tr >
+				<td>
+					<img src="img/img2.webp"   width="100%"  />
+				</td>
+			</tr>
+			
+			<!-- 第六行  优选商品   嵌套一个3行5列的表格-->
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td colspan="5">
+								<font size="5">优选商品</font>
+								<img src="img/title2.jpg" />
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<img src="img/ip1100001min.jpg" /><br/>
+								<font color="red">￥：4322</font><br/>
+								<span>Apple&nbsp;苹果iphone11</span>
+							</td>
+							<td>
+								<img src="img/ip1100002min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip1100003min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip700006min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip1100005min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<img src="img/ip1100001min.jpg" /><br/>
+								<font color="red">￥：4322</font><br/>
+								<span>Apple&nbsp;苹果iphone11</span>
+							</td>
+							<td>
+								<img src="img/ip1100002min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip1100003min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip700006min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+							<td>
+								<img src="img/ip1100005min.jpg" /><br/>
+								<font color="red">￥：1399</font><br/>
+								<span>Redmi&nbsp;8pro</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!--第七行  广告图片2-->
+			<tr>
+				<td>
+					<img src="img/img1.webp"   width="100%"  />
+				</td>
+			</tr>
+			
+			<!-- 第八行  版权信息 友情链接-->
+			<tr>
+				<td>
+					<p align="center">
+						<a href=""><font color="#337AB7">关于我们</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">联系我们</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">联系客服</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">合作招商</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">商家帮助</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">营销中心</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">手机帮助</font></a>&nbsp;&nbsp;
+						<a href=""><font color="#337AB7">销售联盟</font></a>&nbsp;&nbsp;
+				    </p>
+				    
+				    <p align="center">
+				    	&copy; 2005-2020 东易买 版权所有，并保留所有权利 
+				    </p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
